@@ -24,21 +24,12 @@
         "allow-credentials": false
       },
       "authentication": {
-        "provider": "Simulator"
+        "provider": "StaticWebApps"
       },
       "mode": "production"
     }
   },
   "entities": {
-    "MfmiData": {
-      "source": "dbo.MFMI_DATA",
-      "permissions": [
-        {
-          "actions": ["create", "read", "update", "delete"],
-          "role": "anonymous"
-        }
-      ]
-    },
     "Person": {
       "source": "dbo.MyTestPersonTable",
       "permissions": [
