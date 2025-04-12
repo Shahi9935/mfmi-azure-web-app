@@ -38,6 +38,14 @@
           "role": "anonymous"
         }
       ]
+    },"MfData": {
+      "source": "dbo.MF_DATA",
+      "permissions": [
+        {
+          "actions": ["*"],
+          "role": "anonymous"
+        }
+      ]
     }
   }
 }
