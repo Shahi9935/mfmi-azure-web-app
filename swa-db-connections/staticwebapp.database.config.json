@@ -46,6 +46,30 @@
           "role": "anonymous"
         }
       ]
+    },"MfmiData": {
+      "source": {
+        "object": "dbo.MFMI_DATA",
+        "type" : "table",
+        "key-fields": ["ISIN", "Date"]
+      },
+      "permissions": [
+        {
+          "actions": ["*"],
+          "role": "anonymous"
+        }
+      ]
+    },"MfHoldings": {
+      "source": {
+        "object": "dbo.MF_HOLDINGS",
+        "type" : "table",
+        "key-fields": ["ISIN", "Stock_Name", "Active", "Update_TS"]
+      },
+      "permissions": [
+        {
+          "actions": ["*"],
+          "role": "anonymous"
+        }
+      ]
     }
   }
 }
